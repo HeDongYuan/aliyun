@@ -1,0 +1,137 @@
+
+/* CONTAINER
+   ================================================== */
+div.orbit-wrapper {
+  width: 1px;
+  height: 1px;
+  position: relative;
+}
+
+div.orbit {
+  width: 1px;
+  height: 1px;
+  position: relative;
+  overflow: hidden
+}
+
+div.orbit > img {
+  width: 680px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+div.orbit > a {
+  border: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  line-height: 0;
+  display: none;
+}
+
+.orbit > div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* TIMER
+   ================================================== */
+div.timer {
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  opacity: .6;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+span.rotator {
+  display: block;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 0;
+  left: -20px;
+  background: url(../images/CloudMarket/rotator-black.png) no-repeat;
+  z-index: 3;
+}
+
+span.mask {
+  display: block;
+  width: 20px;
+  height: 40px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  overflow: hidden;
+}
+
+span.rotator.move {
+  left: 0
+}
+
+span.mask.move {
+  width: 40px;
+  left: 0;
+  background: url(../images/CloudMarket/timer-black.png) repeat 0 0;
+}
+
+span.pause {
+  display: block;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url(../images/CloudMarket/pause-black.png) no-repeat;
+  z-index: 4;
+  opacity: 0;
+}
+
+span.pause.active {
+  background: url(../images/CloudMarket/pause-black.png) no-repeat 0 -40px
+}
+
+div.timer:hover span.pause,
+span.pause.active {
+  opacity: 1
+}
+
+/*左右按钮================================================== */
+
+div.slider-nav {
+  display: block
+}
+
+div.slider-nav span {
+  width: 34px;
+  height: 50px;
+  text-indent: -9999px;
+  position: absolute;
+  z-index: 1000;
+  top: 50%;
+  margin-top: -25px;
+  cursor: pointer;
+}
+
+div.slider-nav span.right {
+  background: url(../images/CloudMarket/right-arrow.png);
+  right: 0;
+  background-size: 34px;
+}
+
+div.slider-nav span.left {
+  background: url(../images/CloudMarket/left-arrow.png);
+  left: 0;
+  background-size: 34px;
+}
+

@@ -1,0 +1,55 @@
+a,button, b, body, dd, del, div, dl, dt, em, form, h1, h2, h3, h4, h5, h6, html, i, iframe, img, ins, label, legend, li, ol, p, pre, small, span, strong, u, ul, var, input {
+    margin: 0;
+    padding: 0;
+}
+
+article, aside, footer, header, nav, section {
+    display: block;
+}
+ol, ul {
+    list-style: none;
+}
+img {
+    border: 0;
+    display: block;
+}
+
+em, i, u {
+    font-style: normal;
+}
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    
+    visibility: hidden;
+}
+
+.clearfix {
+    *zoom: 1
+}
+body {
+    font: 12px/1.5 'microsoft yahei',Arial, Verdana, "\5b8b\4f53";
+    color: #666;
+    background: #f0f3ef;
+}
+a {
+    color: #666;
+    text-decoration: none;
+    font-family: 'microsoft yahei';
+}
+a:hover {
+    color: #C81623;
+}
+.one-txt-cut {
+    text-overflow:ellipsis;
+    white-space: nowrap;
+    overflow: hidden; 
+}
